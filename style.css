@@ -1,0 +1,218 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #555555;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .clear-fix {
+    clear: both;
+  }
+  .special-font {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .section-pd {
+    padding: 100px 0;
+  }
+  body {
+    font-family: Roboto, sans-serif;
+    color: #555555;
+  }
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    z-index: 9996;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.hero {
+    background-image: url('./download\ \(4\).jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: auto;
+  }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .hero-caption {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-caption-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-caption h3 {
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .hero-caption h1 {
+    color: #ff305b;
+    font-size: 70px;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  .hero-caption h4 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  .services {
+    background-color: #f1f1f1;
+    text-align: center;
+    margin: auto;
+  }
+  .section-header {
+    font-size: 30px;
+    color: #333;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .underline {
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    border-top: 1px solid #ff305b;
+    border-bottom: 1px solid #ff305b;
+  }
+  .underline::before {
+    content: '';
+    top: calc(13px / 2);
+    left: -25%;
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: #ff305b;
+  }
+
+  .service {
+    background-color: #f1f1f1;
+    width: 25%;
+    padding: 40px 10px;
+    transition: all 0.3s;
+    float: left;
+  }
+  .service:hover {
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    z-index: 3;
+  }
+  .service:hover .icon i {
+    transform: scale(1.2);
+  }
+  .service .icon i {
+    transition: transform 0.3s;
+    color: #ff305b;
+    font-size: 30px;
+  }
+  .service h3 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px 0;
+    color: #333;
+    text-transform: uppercase;
+  }
+  .service p {
+    font-size: 14px;
+  }
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+  .contact .first-row {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .contact .second-row {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .contact .first-row input {
+    width: 40%;
+    color: #222;
+    height: 0px;
+  }
+  .contact .second-row input {
+    width: 81%;
+  }
+  input[type='text'],
+  input[type='email'] {
+    border: 1px solid #f1f1f1;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .third-row {
+    width: 81%;
+    margin: auto;
+  }
+  textarea {
+    border: 1px solid #f1f1f1;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+  }
+  .btn {
+    background-color: #ff305b;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #b45366;
+  }
